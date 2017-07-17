@@ -5,6 +5,8 @@ import Chip from 'material-ui/Chip';
 import FontIcon from 'material-ui/FontIcon';
 import Avatar from 'material-ui/Avatar';
 
+
+
 const styles = {
   chip: {
     margin: 4,
@@ -43,10 +45,12 @@ class Finance extends Component {
     return(
       <div>
         {this.state.posts.map(post =>
+
         <Card 
         style={{width: '80%',
         padding: '20px',
         margin: '0 auto',
+        marginTop: '10',
         display: 'flex'}}>
             <CardHeader
             title={post.title}
@@ -55,15 +59,22 @@ class Finance extends Component {
             showExpandableButton={false}
             />
                 <div style={styles.wrapper}>
+                    <Chip 
+                    backgroundColor='#FFCDD2'
+                    style={styles.chip}>
+                        <Avatar backgroundColor='#F44336' size={32}>{post.ups}</Avatar>
+                    </Chip>
                     <Chip
+                    backgroundColor='#90CAF9'
                     style={styles.chip}>
         
-                        <Avatar icon={<FontIcon className="material-icons">face</FontIcon>} />
+                        <Avatar backgroundColor='#1565C0' icon={<FontIcon className="material-icons">face</FontIcon>} />
                         {post.author}
                     </Chip>
-                    <Chip 
+                    <Chip
+                    backgroundColor='#81C784'
                     style={styles.chip}>
-                        <Avatar size={32}>{post.num_comments}</Avatar>
+                        <Avatar backgroundColor='#4CAF50' size={32}>{post.num_comments}</Avatar>
                         comments
                     </Chip>
                 </div>

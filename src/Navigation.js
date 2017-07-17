@@ -6,6 +6,7 @@ injectTapEventPlugin();
 import Showfinance from './Finance';
 import Showinvesting from './Investing';
 import Showstocks from './Stocks'
+import logo from './logo.png'
 
 class Navigation extends Component {
     render() {
@@ -13,7 +14,8 @@ class Navigation extends Component {
             <MuiThemeProvider>
                 <div>
                     <AppBar
-                    title="Dollar Talk"
+                    title={<img src={logo} className="App-logo" alt="logo" height="70" width="65" />}
+                    label="DOLLAR TALK"
                     showMenuIconButton={false}
                     style={{backgroundColor:'#263238',
                             border: '0',
