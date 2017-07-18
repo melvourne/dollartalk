@@ -7,6 +7,7 @@ import Showfinance from './Finance';
 import Showinvesting from './Investing';
 import Showstocks from './Stocks'
 import logo from './logo.png'
+import Login from './Login'
 
 class Navigation extends Component {
     render() {
@@ -14,12 +15,15 @@ class Navigation extends Component {
             <MuiThemeProvider>
                 <div>
                     <AppBar
-                    title={<img src={logo} className="App-logo" alt="logo" height="70" width="65" />}
-                    label="DOLLAR TALK"
-                    showMenuIconButton={false}
+                    iconElementLeft={<img src={logo} className="App-logo" alt="logo" height="75" width="50"/>}
+                    title={<p>DOLLAR TALK</p>}
+                    showMenuIconButton={true}
+                    iconElementRight={<Login/>}
                     style={{backgroundColor:'#263238',
+                            height: '80px',
                             border: '0',
                             boxShadow:'0'}}>
+
                    </AppBar>
                    <Tabs 
                     style={{border:'0'}}>
