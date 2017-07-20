@@ -19,20 +19,22 @@ class Navigation extends Component {
                     iconElementLeft={<img src={logo} className="App-logo" alt="logo" height="40" width="40"/>}
                     showMenuIconButton={true}
                     iconElementRight={<Login/>}
-                    style={{backgroundColor:'#37474F'}}>
+                    style={{backgroundColor:'#FF7043',
+                            boxShadow:'0'}}>
 
                    </AppBar>
                    <Tabs 
-                    style={{border:'0'}}>
+                    style={{border:'0',
+                            boxShadow:'0'}}>
                         <Tab 
-                        style={{backgroundColor:'#F44336'}}
+                        style={{backgroundColor:'#FF7043'}}
                         label="Finance">
                             <div>
                             <Showfinance/>
                             </div>
                         </Tab>
                         <Tab 
-                        style={{backgroundColor:'#F44336',
+                        style={{backgroundColor:'#FF7043',
                         boxShadow:'0'}}
                         label="Investing">
                             <div>
@@ -40,7 +42,7 @@ class Navigation extends Component {
                             </div>
                         </Tab>
                         <Tab 
-                        style={{backgroundColor:'#F44336',
+                        style={{backgroundColor:'#FF7043',
                         boxShadow:'0'}}
                         label="Stock Market">
                             <div>

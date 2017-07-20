@@ -4,6 +4,8 @@ import {Card, CardHeader, CardText} from 'material-ui/Card';
 import Chip from 'material-ui/Chip';
 import FontIcon from 'material-ui/FontIcon';
 import Avatar from 'material-ui/Avatar';
+import { PocketButton, TwitterTweetButton } from 'react-social-sharebuttons';
+
 
 const styles = {
   chip: {
@@ -39,7 +41,7 @@ class Investing extends Component {
     this.getReddit = this.getReddit.bind(this);
   }
 
-  render(){
+   render(){
     return(
       <div>
         {this.state.posts.map(post =>
@@ -81,6 +83,7 @@ class Investing extends Component {
     
 
             <CardText expandable={true}>
+              {post.body}
                 <p>Messenger bag semiotics pour-over you probably haven't heard of them, thundercats tattooed cred raw denim before they sold out pickled selfies raclette polaroid. Gluten-free squid yr copper mug green juice snackwave, DIY keffiyeh typewriter vexillologist deep v. 
                 Yr iPhone chia pug tbh yuccie neutra ethical flexitarian offal. Mixtape 8-bit literally, affogato scenester etsy hot chicken. Tumblr craft beer austin subway tile, waistcoat fanny pack whatever gochujang humblebrag. Narwhal XOXO literally kinfolk humblebrag succulents direct trade cliche before they sold out chillwave pok pok VHS. 
                 Taiyaki palo santo single-origin coffee semiotics 3 wolf moon ugh 90's. Synth pitchfork vaporware humblebrag, ugh bespoke copper mug lo-fi gochujang you probably haven't heard of them palo santo keytar hexagon locavore biodiesel. Everyday carry yr keytar godard blue bottle intelligentsia gochujang.
@@ -92,12 +95,14 @@ class Investing extends Component {
                 </p>
                     <div style={styles.wrapper}>
                     <Chip
-                    backgroundColor='#F5F5F5'
+                    backgroundColor='#FFE57F'
                     style={styles.chip}>
         
-                        <Avatar backgroundColor='#9E9E9E' icon={<FontIcon className="material-icons">link</FontIcon>} />
+                        <Avatar backgroundColor='#FFAB00' icon={<FontIcon className="material-icons">link</FontIcon>} />
                         <a style={{ textDecoration: 'none', color: 'black' }} href={post.url}>Go to Article</a>
                     </Chip>
+                    <PocketButton url={post.url} text={post.title}/>
+                    <TwitterTweetButton url={post.url} text={post.title} />
                 </div>
              </CardText>
         </Card>
@@ -105,7 +110,7 @@ class Investing extends Component {
       </div>
     );
   }
-}
+} 
 
 class Showinvesting extends React.Component {
   constructor() {

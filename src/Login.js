@@ -52,7 +52,7 @@ class Login extends Component {
       userLogin = (
         <RaisedButton 
           label="Sign out"
-          backgroundColor='#37474F'
+          backgroundColor='#FF7043'
           labelColor='#FAFAFA'
           onClick={this
           .logOut
@@ -62,7 +62,7 @@ class Login extends Component {
       userLogin = (
         <RaisedButton 
           label="Sign in with Google"
-          backgroundColor='#37474F'
+          backgroundColor='#FF7043'
           labelColor='#FAFAFA'
           onClick={this
           .loginWithGoogle

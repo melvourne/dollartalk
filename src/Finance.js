@@ -4,7 +4,7 @@ import {Card, CardHeader, CardText} from 'material-ui/Card';
 import Chip from 'material-ui/Chip';
 import FontIcon from 'material-ui/FontIcon';
 import Avatar from 'material-ui/Avatar';
-import { PocketButton, TwitterTweetButton, FacebookButton } from 'react-social-sharebuttons';
+import { PocketButton, TwitterTweetButton } from 'react-social-sharebuttons';
 
 
 const styles = {
@@ -43,8 +43,10 @@ class Finance extends Component {
     this.getReddit = this.getReddit.bind(this);
   }
 
+  
 
    render(){
+  
     return(
       <div>
         {this.state.posts.map(post =>
@@ -106,7 +108,6 @@ class Finance extends Component {
                     </Chip>
                     <PocketButton url={post.url} text={post.title}/>
                     <TwitterTweetButton url={post.url} text={post.title} />
-                    <FacebookButton url={post.url}/> 
                 </div>
              </CardText>
         </Card>
