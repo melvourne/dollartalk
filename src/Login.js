@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import firebase from 'firebase';
-import google from './google.png'
+import RaisedButton from 'material-ui/RaisedButton';
+
 
 var config = {
   apiKey: "AIzaSyD2VQ1dg74gcuh5lZgPulk1J9PUCT8Vs5s",
@@ -49,15 +50,23 @@ class Login extends Component {
     let userLogin;
     if (currentState.isLoggedIn) {
       userLogin = (
-        <button onClick={this
+        <RaisedButton 
+          label="Sign out"
+          backgroundColor='#37474F'
+          labelColor='#FAFAFA'
+          onClick={this
           .logOut
-          .bind(this)}>Sign Out</button>
+          .bind(this)}></RaisedButton>
       )
     } else {
       userLogin = (
-        <h2 onClick={this
+        <RaisedButton 
+          label="Sign in with Google"
+          backgroundColor='#37474F'
+          labelColor='#FAFAFA'
+          onClick={this
           .loginWithGoogle
-          .bind(this)}><img src={google} alt=""/></h2>
+          .bind(this)}></RaisedButton>
       )
     }
     return (
@@ -69,3 +78,4 @@ class Login extends Component {
 }
 
 export default Login;
+

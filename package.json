@@ -9,6 +9,7 @@
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-router-dom": "^4.1.2",
+    "react-social-sharebuttons": "^2.1.2",
     "react-tap-event-plugin": "^2.0.1",
     "time-ago": "^0.1.0"
   },

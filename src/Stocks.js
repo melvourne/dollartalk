@@ -50,6 +50,7 @@ class Stocks extends Component {
         padding: '20px',
         margin: '0 auto',
         marginTop: '10px',
+        backgroundColor: '#F5F5F5',
         display: 'flex'}}>
             <CardHeader
             title={post.title}

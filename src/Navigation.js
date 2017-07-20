@@ -15,28 +15,24 @@ class Navigation extends Component {
             <MuiThemeProvider>
                 <div>
                     <AppBar
-                    iconElementLeft={<img src={logo} className="App-logo" alt="logo" height="75" width="50"/>}
-                    title={<p>DOLLAR TALK</p>}
+                    title="Dollar Talk"
+                    iconElementLeft={<img src={logo} className="App-logo" alt="logo" height="40" width="40"/>}
                     showMenuIconButton={true}
                     iconElementRight={<Login/>}
-                    style={{backgroundColor:'#263238',
-                            height: '80px',
-                            border: '0',
-                            boxShadow:'0'}}>
+                    style={{backgroundColor:'#37474F'}}>
 
                    </AppBar>
                    <Tabs 
                     style={{border:'0'}}>
                         <Tab 
-                        style={{backgroundColor:'#263238',
-                        boxShadow:'0'}}
+                        style={{backgroundColor:'#F44336'}}
                         label="Finance">
                             <div>
                             <Showfinance/>
                             </div>
                         </Tab>
                         <Tab 
-                        style={{backgroundColor:'#263238',
+                        style={{backgroundColor:'#F44336',
                         boxShadow:'0'}}
                         label="Investing">
                             <div>
@@ -44,7 +40,7 @@ class Navigation extends Component {
                             </div>
                         </Tab>
                         <Tab 
-                        style={{backgroundColor:'#263238',
+                        style={{backgroundColor:'#F44336',
                         boxShadow:'0'}}
                         label="Stock Market">
                             <div>

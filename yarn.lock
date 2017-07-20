@@ -4458,6 +4458,12 @@ react-scripts@0.9.5:
   optionalDependencies:
     fsevents "1.0.17"
 
+react-social-sharebuttons@^2.1.2:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/react-social-sharebuttons/-/react-social-sharebuttons-2.1.2.tgz#73470684184b268b8f8d788963f222b908e79f74"
+  dependencies:
+    react "^15.0.2"
+
 react-tap-event-plugin@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/react-tap-event-plugin/-/react-tap-event-plugin-2.0.1.tgz#316beb3bc6556e29ec869a7293e89c826a9074d2"
@@ -4474,7 +4480,7 @@ react-transition-group@^1.1.2:
     prop-types "^15.5.6"
     warning "^3.0.0"
 
-react@^15.4.2:
+react@^15.0.2, react@^15.4.2:
   version "15.6.1"
   resolved "https://registry.yarnpkg.com/react/-/react-15.6.1.tgz#baa8434ec6780bde997cdc380b79cd33b96393df"
   dependencies:
