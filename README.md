@@ -1,7 +1,7 @@
 # README
 
 ## Live Demo on Heroku
-https://dollar-talk.herokuapp.com/
+https://dollar-talk.firebaseapp.com/
 
 ## App Concept
 Financial news app that aggregates popular article news from finance focused subreddits.
@@ -24,6 +24,7 @@ Financial news app that aggregates popular article news from finance focused sub
 
 ## Tools, Packages and API
 - Node and React
+- Axios
 - Reddit API
 - Firebase
 - Material Ui
