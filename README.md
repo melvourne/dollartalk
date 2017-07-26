@@ -19,7 +19,7 @@ Financial news app that aggregates popular article news from finance focused sub
 ## Wireframe
 <img width="703" alt="screen shot 2017-07-22 at 6 47 47 pm" src="https://user-images.githubusercontent.com/18462926/28489763-51388bd4-6f0e-11e7-9960-d4a1ac2bedc8.png">
 
-## Project Plan and Estimation
+## Client Interaction and Project planning
 - See my Trello Board https://trello.com/b/omgbtUFP/term-3-project-plan-b
 
 ## Tools, Packages and API
