@@ -1,6 +1,6 @@
 # README
 
-## Live Demo on Heroku
+## Live Demo
 https://dollar-talk.firebaseapp.com/
 
 ## App Concept
